@@ -1,0 +1,166 @@
+/* Grid setup */
+body {
+    display: grid;
+    padding: 0px;
+    margin: 0px;
+    height: 100vh;
+    background: grey;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+	float: left;
+}
+
+/* Link styles */
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover 
+{
+     color:#FFFFFF; 
+     text-decoration:none; 
+}
+
+/* Text styles */
+
+.header_name_left {
+	position: absolute;
+	color: black;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 30px; 
+	margin: 7px 0px 10px 10px;
+	text-decoration: none;
+	text-align: left;
+	}
+
+.header_name_right {
+	position: relative;
+	color: black;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 30px; 
+	margin: 7px 10px 10px 0px;
+	text-decoration: none;
+	text-align: right;
+	}
+
+
+h1.content_name {
+	color: black;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 30px; 
+	text-decoration: none;
+	margin: 20px 0px 0px 20px;
+	}
+
+.sidenav-copy {
+	color: black;
+	font-family: 'IBM Plex Sans', sans-serif;
+	margin: 20px 40px 20px 40px;
+}
+
+.section-copy {
+	color: black;
+	font-family: 'IBM Plex Sans', sans-serif;
+	margin: 20px 60px 20px 60px;
+}
+
+.footer_text {
+	position: absolute;
+	color: white;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 14px; 
+	text-decoration: none;
+	text-align: left;
+	margin: 10px 0px 0px 10px;
+}
+
+/* Grid elements */
+
+.header {
+	position: -webkit-sticky;
+  	position: sticky;
+  	z-index: 999;
+  	top: 0;
+	background: #ea336d;
+	border-bottom: 2px solid black;
+	grid-area: header;
+}
+
+.left_gutter {
+	position: relative;
+	background: #d1c9c4;
+	grid-area: left_gutter;
+}
+
+.content {
+	position: relative;
+	background: #ffffff;
+	grid-area: content;
+}
+
+.footer {
+	position: -webkit-sticky;
+  	position: sticky;
+    bottom: 0;
+	background: #3D4243;
+	grid-area: footer;
+}
+
+/* Icons */
+
+.twitter_icon {
+	height: 28px;
+	width: 28px;
+	float: right;
+	padding: 1px 10px 1px 10px;
+}
+
+.instagram_icon {
+	height: 22px;
+	width: 22px;
+	float: right;
+	padding: 4px 10px 4px 10px;
+}
+
+.github_icon {
+	height: 22px;
+	width: 22px;
+	float: right;
+	padding: 4px 10px 4px 10px;
+}
+
+.linkedin_icon {
+	height: 22px;
+	width: 22px;
+	float: right;
+	padding: 4px 20px 4px 10px;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 500px) {
+    body {
+    	grid-template-columns: 100%;
+    	grid-template-rows: 40px 3fr 1fr 30px;
+    	grid-template-areas: "header"
+    					"content" 
+    					"left_gutter"
+    					"footer";
+         }
+}
+
+@media only screen and (min-width: 500px) {
+    body {
+    	grid-template-columns: 200px 1fr;
+    	grid-template-rows: 40px 1fr 30px;
+    	grid-template-areas: "header header"
+    					"left_gutter content"
+    					"footer footer";
+         }
+}
+
