@@ -166,6 +166,7 @@ h1.content_name {
 }
 
 .work .more_overlay	 {
+  width: auto;
   background: #ea336d;
 }
 
