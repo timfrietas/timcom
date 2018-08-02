@@ -145,7 +145,6 @@ h1.content_name {
 
 .writing .writing_overlay	 {
   width: 70%;
-  align-items: center;
 }
 
 .writing .more_overlay	 {
@@ -155,7 +154,6 @@ h1.content_name {
 
 .creative .creative_overlay	 {
   width: 70%;
-  align-items: center;
 }
 
 .creative .more_overlay	 {
@@ -165,7 +163,6 @@ h1.content_name {
 
 .work .work_overlay	 {
   width: 70%;
-  align-items: center;
 }
 
 .work .more_overlay	 {
