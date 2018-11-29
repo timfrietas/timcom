@@ -25,6 +25,18 @@ a:hover
 	text-decoration:none; 
 }
 
+blockquote { 
+	display: block;
+	text-align: center;
+	font-weight: 700;
+	font-style: italic;
+	font-size: 1.2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
 /* Text styles */
 
 h1.header_name_left {
@@ -78,6 +90,12 @@ h1.sidebar_name {
 	font-family: 'IBM Plex Mono', monospace;
 	font-size: 1.2em; 
 	margin: 40px 100px 60px 100px;
+}
+
+.footnote {
+	color: #bdc1bf;
+	font-family: 'IBM Plex Mono', monospace;
+	font-size: .875em; 
 }
 
 .footer_text {
