@@ -60,7 +60,6 @@ h1.header_name {
 	font-size: 1.875em; 
 	margin-top: 7px;
 	margin-right: 10px;
-	text-decoration: none;
 	text-align: right;
 	}
 
@@ -69,7 +68,6 @@ h1.content_name {
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 1.875em; 
 	margin: 7px 0px 0px 10px;
-	text-decoration: none;
 	}
 
 .section-copy {
@@ -128,7 +126,6 @@ h1.content_name {
   	top: 0;
 	background: #231a1b;
 	grid-area: header;
-
 }
 
 .writing_header {
