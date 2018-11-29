@@ -28,7 +28,7 @@ a:hover
 
 /* Text styles */
 
-.header_name_left {
+/* .header_name_left {
 	position: absolute;
 	color: black;
 	font-family: 'Josefin Sans', sans-serif;
@@ -46,26 +46,53 @@ a:hover
 	margin: 7px 10px 10px 0px;
 	text-decoration: none;
 	text-align: right;
+	} */
+
+h1.header_name_left {
+	position: absolute;
+	color: black;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 30px; 
+	margin: 7px 0px 10px 10px;
+	text-decoration: none;
+	text-align: left;
 	}
 
+h1.header_name_right {
+	position: relative;
+	color: black;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 30px; 
+	margin: 7px 10px 10px 0px;
+	text-decoration: none;
+	text-align: right;
+	}
 
 h1.content_name {
-	color: black;
-	font-family: 'IBM Plex Sans', sans-serif;
+	color: #bdc1bf;
+	font-family: 'IBM Plex Mono', monospace;
+	font-size: 30px; 
+	text-decoration: none;
+	margin: 20px 0px 0px 20px;
+	}
+
+h1.sidebar_name {
+	color: #2f2f2f;
+	font-family: 'IBM Plex Mono', monospace;
 	font-size: 30px; 
 	text-decoration: none;
 	margin: 20px 0px 0px 20px;
 	}
 
 .sidenav-copy {
-	color: black;
-	font-family: 'IBM Plex Sans', sans-serif;
+	color: #2f2f2f;
+	font-family: 'IBM Plex Mono', monospace;
 	margin: 20px 40px 20px 40px;
 }
 
 .section-copy {
-	color: black;
-	font-family: 'IBM Plex Sans', sans-serif;
+	color: #bdc1bf;
+	font-family: 'IBM Plex Mono', monospace;
 	margin: 20px 60px 20px 60px;
 }
 
@@ -81,7 +108,27 @@ h1.content_name {
 
 /* Grid elements */
 
-.header {
+.header_writing {
+	position: -webkit-sticky;
+  	position: sticky;
+  	z-index: 999;
+  	top: 0;
+	background: #fcfc37;
+	border-bottom: 2px solid black;
+	grid-area: header;
+}
+
+.header_creative {
+	position: -webkit-sticky;
+  	position: sticky;
+  	z-index: 999;
+  	top: 0;
+	background: #529eea;
+	border-bottom: 2px solid black;
+	grid-area: header;
+}
+
+.header_work {
 	position: -webkit-sticky;
   	position: sticky;
   	z-index: 999;
@@ -93,13 +140,13 @@ h1.content_name {
 
 .left_gutter {
 	position: relative;
-	background: #d1c9c4;
+	background: #c6cbd3;
 	grid-area: left_gutter;
 }
 
 .content {
 	position: relative;
-	background: #ffffff;
+	background: #2f2f2f;
 	grid-area: content;
 }
 
@@ -143,7 +190,7 @@ h1.content_name {
 
 /* Media queries */
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 650px) {
     body {
     	grid-template-columns: 100%;
     	grid-template-rows: 40px 3fr 1fr 30px;
@@ -154,7 +201,7 @@ h1.content_name {
          }
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 650px) {
     body {
     	grid-template-columns: 200px 1fr;
     	grid-template-rows: 40px 1fr 30px;
