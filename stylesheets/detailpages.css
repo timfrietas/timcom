@@ -28,26 +28,6 @@ a:hover
 
 /* Text styles */
 
-/* .header_name_left {
-	position: absolute;
-	color: black;
-	font-family: 'Josefin Sans', sans-serif;
-	font-size: 30px; 
-	margin: 7px 0px 10px 10px;
-	text-decoration: none;
-	text-align: left;
-	}
-
-.header_name_right {
-	position: relative;
-	color: black;
-	font-family: 'Josefin Sans', sans-serif;
-	font-size: 30px; 
-	margin: 7px 10px 10px 0px;
-	text-decoration: none;
-	text-align: right;
-	} */
-
 h1.header_name_left {
 	position: absolute;
 	color: black;
