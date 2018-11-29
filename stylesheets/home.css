@@ -57,7 +57,7 @@ a:hover
 h1.header_name {
 	color: white;
 	font-family: 'Josefin Sans', sans-serif;
-	font-size: 30px; 
+	font-size: 1.875em; 
 	margin-top: 7px;
 	margin-right: 10px;
 	text-decoration: none;
@@ -67,7 +67,7 @@ h1.header_name {
 h1.content_name {
 	color: black;
 	font-family: 'Josefin Sans', sans-serif;
-	font-size: 30px; 
+	font-size: 1.875em; 
 	margin: 7px 0px 0px 10px;
 	text-decoration: none;
 	}
@@ -75,14 +75,14 @@ h1.content_name {
 .section-copy {
 	color: #bdc1bf;
 	font-family: 'IBM Plex Mono', monospace;
-	font-size: 18px; 
+	font-size: 1.2em;  
 }
 
 .footer_text {
 	position: absolute;
 	color: white;
 	font-family: 'Josefin Sans', sans-serif;
-	font-size: 14px; 
+	font-size: .875em; 
 	text-decoration: none;
 	text-align: left;
 	margin: 10px 0px 0px 10px;

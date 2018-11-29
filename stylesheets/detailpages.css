@@ -32,7 +32,7 @@ h1.header_name_left {
 	position: absolute;
 	color: black;
 	font-family: 'Josefin Sans', sans-serif;
-	font-size: 30px; 
+	font-size: 1.875em;  
 	margin: 7px 0px 10px 10px;
 	text-decoration: none;
 	text-align: left;
@@ -42,7 +42,7 @@ h1.header_name_right {
 	position: relative;
 	color: black;
 	font-family: 'Josefin Sans', sans-serif;
-	font-size: 30px; 
+	font-size: 1.875em; 
 	margin: 7px 10px 10px 0px;
 	text-decoration: none;
 	text-align: right;
@@ -51,7 +51,7 @@ h1.header_name_right {
 h1.content_name {
 	color: #bdc1bf;
 	font-family: 'IBM Plex Mono', monospace;
-	font-size: 30px; 
+	font-size: 1.875em; 
 	text-decoration: none;
 	margin: 20px 0px 0px 20px;
 	}
@@ -59,7 +59,7 @@ h1.content_name {
 h1.sidebar_name {
 	color: #2f2f2f;
 	font-family: 'IBM Plex Mono', monospace;
-	font-size: 30px; 
+	font-size: 1.875em; 
 	text-decoration: none;
 	margin: 20px 0px 0px 20px;
 	}
@@ -73,6 +73,7 @@ h1.sidebar_name {
 .section-copy {
 	color: #bdc1bf;
 	font-family: 'IBM Plex Mono', monospace;
+	font-size: 1.2em; 
 	margin: 20px 60px 20px 60px;
 }
 
@@ -80,7 +81,7 @@ h1.sidebar_name {
 	position: absolute;
 	color: white;
 	font-family: 'Josefin Sans', sans-serif;
-	font-size: 14px; 
+	font-size: .875em; 
 	text-decoration: none;
 	text-align: left;
 	margin: 10px 0px 0px 10px;
