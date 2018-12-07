@@ -3,8 +3,9 @@
 body {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 40px 40px 1fr 40px 1fr 40px 1fr 30px;
-    grid-template-areas: "header header"
+    grid-template-rows: 40px .5fr 40px 1fr 40px 1fr 40px 1fr 30px;
+	grid-template-areas: "header header"
+						"about about"
 						"writing_header writing_bg"
 						"writing writing_bg"
     					"creative_bg creative_header"
@@ -70,6 +71,21 @@ h1.content_name {
 	margin: 7px 0px 0px 10px;
 	}
 
+h1.about_copy {
+	color: black;
+	font-family: 'Raleway', sans-serif;
+	font-size: 4em; 
+	text-transform: uppercase;
+	margin: 20px 30px 20px 30px;
+	}
+
+h2.about_copy {
+	color: #4e5853;
+	font-family: 'IBM Plex Mono', monospace;
+	font-size: 1.6em;
+	padding: 0px 30px 0px 30px;
+}	
+
 .section-copy {
 	color: #bdc1bf;
 	font-family: 'IBM Plex Mono', monospace;
@@ -124,6 +140,13 @@ h1.content_name {
   	top: 0;
 	background: #231a1b;
 	grid-area: header;
+}
+
+.about{
+	position: relative;
+	/* background: #dbdbdb; */
+	background-image: linear-gradient(to bottom right, #beb7b7 , #dfd3d3);
+	grid-area: about;
 }
 
 .writing_header {
@@ -217,9 +240,10 @@ h1.content_name {
 @media only screen and (max-width: 650px) {
     body {
     	grid-template-columns: 100%;
-    	grid-template-rows: 40px 40px 1fr 1fr 40px 1fr 1fr 40px 1fr 1fr 30px;
+    	grid-template-rows: 40px .5fr 40px 1fr 1fr 40px 1fr 1fr 40px 1fr 1fr 30px;
     	grid-template-areas: "header"
-    					"writing_header" 
+						"about"
+						"writing_header" 
     					"writing_bg"
     					"writing"
     					"creative_header"
