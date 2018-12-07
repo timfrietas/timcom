@@ -1,18 +1,18 @@
 /* Grid setup */
 body {
     display: grid;
-    grid-template-columns: 150px 1fr;
+    grid-template-columns: 100%;
     grid-template-rows: 40px 1fr 1fr 1fr 1fr 1fr 30px;
-    grid-template-areas: "header header"
-                    "neonhorse_logo neonhorse"
-                    "stae_logo stae"
-                    "giphy_logo giphy"
-                    "digitalocean_logo digitalocean"
-                    "amazon_logo amazon"
-                    "footer footer";
-         }
+    grid-template-areas: "header"
+                    "neonhorse"
+                    "stae"
+                    "giphy"
+                    "digitalocean"
+                    "amazon"
+                    "footer";
     padding: 0px;
     margin: 0px;
+    height: 100vh;
     background: grey;
 }
 
@@ -20,13 +20,6 @@ img {
 	width: 100%;
 	height: 100%;
 	float: left;
-}
-
-img.center {
-    position: absolute;
-    top: 40%;
-    left: 10%;
-    width: 80%;
 }
 
 /* Link styles */
@@ -151,61 +144,34 @@ h2.section_name {
 	text-decoration: none;
 }
 
-.neonhorse_logo {
-	position: relative;
-	background: #da9898;
-	grid-area: neonhorse_logo;
-}
-
 .neonhorse {
 	position: relative;
-	background: #2f2f2f;
+	background: #da9898;
 	grid-area: neonhorse;
 }
 
-.stae_logo {
-	position: relative;
-	background: #6568e9;
-    grid-area: stae_logo;
-}
 
 .stae {
 	position: relative;
-	background: #212131;
-	grid-area: stae;
+	background: #6568e9;
+    grid-area: stae;
 }
 
-.giphy_logo {
-	position: relative;
-	background: #121212;
-	grid-area: giphy_logo;
-}
 .giphy {
 	position: relative;
-	background: #2f2f2f;
+	background: #121212;
 	grid-area: giphy;
 }
 
-.digitalocean_logo {
-	position: relative;
-	background: #031b4d;
-	grid-area: digitalocean_logo;
-}
 .digitalocean {
 	position: relative;
-	background: #212131;
+	background: #031b4d;
 	grid-area: digitalocean;
-}
-
-.amazon_logo {
-	position: relative;
-	background: #f3a847;
-	grid-area: amazon_logo;
 }
 
 .amazon {
 	position: relative;
-	background: #2f2f2f;
+	background: #f3a847;
 	grid-area: amazon;
 }
 
@@ -226,11 +192,11 @@ h2.section_name {
 	padding: 1px 10px 1px 10px;
 }
 
-.instagram_icon {
+.telegram_icon {
 	height: 22px;
 	width: 22px;
 	float: right;
-	padding: 4px 10px 4px 10px;
+	padding: 4px 10px 4px 5px;
 }
 
 .github_icon {
