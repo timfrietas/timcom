@@ -191,11 +191,11 @@ h1.content_name {
 	padding: 1px 10px 1px 10px;
 }
 
-.instagram_icon {
+.telegram_icon {
 	height: 22px;
 	width: 22px;
 	float: right;
-	padding: 4px 10px 4px 10px;
+	padding: 4px 10px 4px 5px;
 }
 
 .github_icon {
