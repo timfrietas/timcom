@@ -5,7 +5,7 @@ body {
     grid-template-columns: 50% 50%;
     grid-template-rows: 40px .5fr 40px 1fr 40px 1fr 40px 1fr 30px;
 	grid-template-areas: "header header"
-						"about about"
+						"about_left about_right"
 						"writing_header writing_bg"
 						"writing writing_bg"
     					"creative_bg creative_header"
@@ -76,14 +76,18 @@ h1.about_copy {
 	font-family: 'Raleway', sans-serif;
 	font-size: 4em; 
 	text-transform: uppercase;
+	text-align: center;
+	padding: 10% 0;
 	margin: 20px 30px 20px 30px;
 	}
 
 h2.about_copy {
-	color: #4e5853;
+	color: #bdc1bf;
 	font-family: 'IBM Plex Mono', monospace;
 	font-size: 1.6em;
-	padding: 0px 30px 0px 30px;
+	text-align: right;
+	padding: 20px 20px 20px 20px;
+	/* margin: 20px 0px 0px 30px; */
 }	
 
 .section-copy {
@@ -142,11 +146,16 @@ h2.about_copy {
 	grid-area: header;
 }
 
-.about{
+.about_left{
 	position: relative;
-	/* background: #dbdbdb; */
 	background-image: linear-gradient(to bottom right, #beb7b7 , #dfd3d3);
-	grid-area: about;
+	grid-area: about_left;
+}
+
+.about_right{
+	position: relative;
+	background: #474747;
+	grid-area: about_right;
 }
 
 .writing_header {
@@ -240,9 +249,10 @@ h2.about_copy {
 @media only screen and (max-width: 650px) {
     body {
     	grid-template-columns: 100%;
-    	grid-template-rows: 40px .5fr 40px 1fr 1fr 40px 1fr 1fr 40px 1fr 1fr 30px;
+    	grid-template-rows: 40px .5fr .5fr 40px 1fr 1fr 40px 1fr 1fr 40px 1fr 1fr 30px;
     	grid-template-areas: "header"
-						"about"
+						"about_left"
+						"about_right"
 						"writing_header" 
     					"writing_bg"
     					"writing"
