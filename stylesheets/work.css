@@ -29,6 +29,14 @@ img.work_logos {
 	padding: 10px 20px 10px 20px;
 }
 
+
+.neonhorse_logo {
+    width: 150px;
+	height: 150px;
+    float: left;
+	padding: 10px 20px 10px 20px;
+}
+
 /* Link styles */
 
 a {
@@ -77,42 +85,40 @@ h1.header_name_right {
 	text-align: right;
 	}
 
-h1.content_name {
+h1.content_name_light {
 	color: #bdc1bf;
 	font-family: 'Raleway', sans-serif;
 	text-transform: uppercase;
 	font-size: 2.75em; 
-	text-decoration: none;
-	margin: 20px 40px 0px 40px;
-	}
+	margin: 40px 100px 60px 200px;
+    }
 
-h1.sidebar_name {
-	color: #2f2f2f;
-	font-family: 'Raleway', sans-serif;
-	text-transform: uppercase;
-	font-size: 1.875em; 
-	text-decoration: none;
-	margin: 20px 0px 0px 20px;
-	}
+h1.content_name_dark {
+    color: #1a181a;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 2.75em; 
+    margin: 40px 100px 60px 200px;
+    }
 
 h2.section_name {
 	color: #bdc1bf;
 	font-family: 'Raleway', sans-serif;
 	font-size: 1.75em; 
-	text-decoration: none;
 	}
 
-.sidenav-copy {
-	color: #2f2f2f;
-	font-family: 'IBM Plex Mono', monospace;
-	margin: 20px 40px 20px 40px;
-}
-
-.section-copy {
+.section-copy-light {
 	color: #bdc1bf;
 	font-family: 'IBM Plex Mono', monospace;
 	font-size: 1.2em; 
-	margin: 40px 40px 60px 40px;
+	margin: 40px 100px 60px 200px;
+}
+
+.section-copy-dark {
+	color: #1a181a;
+	font-family: 'IBM Plex Mono', monospace;
+	font-size: 1.2em; 
+	margin: 40px 100px 60px 200px;
 }
 
 .footnote {
@@ -153,10 +159,9 @@ h2.section_name {
 
 .neonhorse {
 	position: relative;
-	background: #da9898;
+	background: #0C0D0C;
 	grid-area: neonhorse;
 }
-
 
 .stae {
 	position: relative;
@@ -166,19 +171,19 @@ h2.section_name {
 
 .giphy {
 	position: relative;
-	background: #080808;
+	background: #0C0D0C;
 	grid-area: giphy;
 }
 
 .digitalocean {
 	position: relative;
-	background: #e1e4eb;
+	background: #0467f6;
 	grid-area: digitalocean;
 }
 
 .amazon {
 	position: relative;
-	background: #f3a847;
+	background: #0C0D0C;
 	grid-area: amazon;
 }
 
