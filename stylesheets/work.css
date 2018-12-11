@@ -90,7 +90,7 @@ h1.content_name_light {
 	font-family: 'Raleway', sans-serif;
 	text-transform: uppercase;
 	font-size: 2.75em; 
-	margin: 40px 100px 60px 200px;
+	margin: 20px 100px 20px 200px;
     }
 
 h1.content_name_dark {
@@ -98,27 +98,33 @@ h1.content_name_dark {
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
     font-size: 2.75em; 
-    margin: 40px 100px 60px 200px;
+    margin: 20px 100px 20px 200px;
     }
 
-h2.section_name {
+h2.section_name_light {
 	color: #bdc1bf;
-	font-family: 'Raleway', sans-serif;
-	font-size: 1.75em; 
-	}
+	font-family: 'IBM Plex Mono', monospace;
+	font-size: 1.5em; 
+    }
+
+h2.section_name_dark {
+    color: #1a181a;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.5em; 
+    }
 
 .section-copy-light {
 	color: #bdc1bf;
 	font-family: 'IBM Plex Mono', monospace;
 	font-size: 1.2em; 
-	margin: 40px 100px 60px 200px;
+	margin: 20px 100px 40px 200px;
 }
 
 .section-copy-dark {
 	color: #1a181a;
 	font-family: 'IBM Plex Mono', monospace;
 	font-size: 1.2em; 
-	margin: 40px 100px 60px 200px;
+	margin: 20px 100px 40px 200px;
 }
 
 .footnote {
