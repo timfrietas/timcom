@@ -82,7 +82,7 @@ h3.section{
 
 .main_text{
     color: #BDC1BF;
-    background-color: #29030349;
+    /* background-color: #29030349; */
     font-family: 'IBM Plex Mono', monospace;
     font-size: 1.6em; 
     text-align: left;
