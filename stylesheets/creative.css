@@ -2,8 +2,9 @@
 body {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: 1fr 30px;
-    grid-template-areas:"left_gutter main right_gutter"
+    grid-template-rows: 200px 4fr 30px;
+    grid-template-areas:"header header header"
+                        "left_gutter main right_gutter"
                         "footer footer footer";
     padding: 0px;
     margin: 0px;
@@ -49,13 +50,11 @@ h1.firstname {
 	text-transform: uppercase;
     font-size: 6em; 
     letter-spacing: -.11em;
-    /* line-height: 50%; */
-    /* letter-spacing: 1em; */
 	margin: 0px 20px 0px 10px;
     }
     
 h1.lastname{
-    color: #000000;
+    color: #730000;
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
     font-size: 6em; 
@@ -70,14 +69,13 @@ h2.section{
     font-family: 'Raleway', sans-serif;
     font-size: 1.4em; 
     text-transform: uppercase;
-    margin: 30% 20px 0px 20px;
+    margin: 0px 0px 0px 20px;
     }
 h3.section{
     color: #BDC1BF;
     font-family: 'IBM Plex Mono', monospace;
-    /* font-family: 'Raleway', sans-serif; */
     font-size: 1em; 
-    margin: 0px 20px 0px 40px;
+    margin: 0px 0px 20px 20px;
     }
 
 .main_text{
@@ -87,12 +85,7 @@ h3.section{
     font-size: 1.6em; 
     text-align: left;
     position: relative;
-    top: 50%;
-    -ms-transform: translateY(-30%);
-    -webkit-transform: translateY(-30%);
-    transform: translateY(-30%);
-    margin: 0% 10% 0% 0%;
-    padding: 20px 40px 20px 40px;
+    margin: 0% 10% 0% 10%;
     }
 
 h1.links{
@@ -103,10 +96,6 @@ h1.links{
     letter-spacing: -.11em;
     text-align: right;
     position: relative;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
     margin: 0px 20px 0px 0px;
     }
     
@@ -128,25 +117,25 @@ h1.links{
   	position: sticky;
   	z-index: 999;
   	top: 0;
-	background: #231a1b;
+	background: #000000;
 	grid-area: header;
 }
 
 .left_gutter {
 	position: relative;
-	background: #730000;
+	background: #000000;
 	grid-area: left_gutter;
 }
 
 .main{
 	position: relative;
-    background: #730000;
+    background: #000000;
 	grid-area: main;
 }
 
 .right_gutter {
 	position: relative;
-	background: #730000;
+	background: #000000;
 	grid-area: right_gutter;
 }
 
@@ -154,7 +143,7 @@ h1.links{
 	position: -webkit-sticky;
   	position: sticky;
     bottom: 0;
-	background: #3D4243;
+	background: #2f2f2f;
 	grid-area: footer;
 }
 
