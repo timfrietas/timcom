@@ -1,15 +1,28 @@
+$section-height: 500px;
+$footer-height: 4rem;
+$border-radius: .5rem;
+$default-spacing: 2rem;
+
+$black #000000;
+$gray: #a0a0a0;
+$gray-light: #F3F3F3;
+$indigo: #6C73DC;
+$teal: #89CDCE;
+$lightblue: #66AEE5;
+
 
 /* Grid setup */
 body {
     display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns: 1fr 4fr;
     grid-template-rows: 4fr 30px;
-    grid-template-areas:"left_gutter main right_gutter"
-                        "footer footer footer";
+    grid-template-areas:"left_gutter main"
+                        "footer footer";
     padding: 0px;
     margin: 0px;
     height: 100vh;
     background: #000000;
+    transition: 0.3s all;
 }
 
 a {
@@ -71,12 +84,9 @@ h1.lastname{
 .linksection {
     /* border:none; */
     position: relative;
-    align-content: center;
     top: 50%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    /* -webkit-transform: translateX(50%);
-    transform: translateX(50%); */
 }
 
 h2.section{
@@ -88,6 +98,7 @@ h2.section{
     }
 h3.section{
     color: #BDC1BF;
+    /* font-family: 'IBM Plex Mono', monospace; */
     font-family: 'Cabin', sans-serif;
     font-size: 1em; 
     margin: 0px 0px 20px 20px;
@@ -95,13 +106,12 @@ h3.section{
 
 .main_text{
     color: #BDC1BF;
+    /* font-family: 'IBM Plex Mono', monospace; */
     font-family: 'Cabin', sans-serif;
     font-size: 1.6em; 
     text-align: left;
     position: relative;
-    /* background-color: #000000ad; */
-    margin: 20px 20px;
-    /* text-shadow: 1px 1px 1px #FFE8FB; */
+    margin: 0% 10% 0% 10%;
     }
 
 h1.links{
@@ -135,46 +145,17 @@ h1.title{
 
 /* Parallax */
 
-.parallax-container {
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    position: absolute;
-    transform-style: preserve-3d;
-    -webkit-perspective: 1px;
-    perspective: 1px;
-    perspective-origin: 0 0;
-    scroll-behavior: smooth;
-  }
-  .parallax-front {
-    z-index: 3;
-    position: relative;
-    transform-origin: 0 0;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-  }
-
-  .parallax-middle {
-    position: relative;
-    z-index: 2;
-    /* move the children to a layer in the background, */
-    /* then scale them back up to their original size */
-    transform-origin: 0 0;
-    -webkit-transform: translateZ(-12px) scale(13);
-    transform: translateZ(-1px) scale(2);
-  }
-
-  .parallax-rear {
-    position: relative;
-    z-index: 1;
-    /* move the children to a layer in the background, */
-    /* then scale them back up to their original size */
-    transform-origin: 0 0;
-    -webkit-transform: translateZ(-2px) scale(3);
-    transform: translateZ(-2px) scale(3);
-  }
+    
 
 /* Grid elements */
+
+.header {
+  	position: sticky;
+    z-index: 1;
+    top: 0;
+    background: #000000;
+    grid-area: header;
+}
 
 .left_gutter {
     background: #000000;
@@ -185,8 +166,8 @@ h1.title{
 
 .main{
     position: relative;
+    overflow: auto; 
     background: #000000;
-    /* margin: 0px 200px 0px 0px; */
 	grid-area: main;
 }
 
@@ -212,8 +193,7 @@ h1.title{
 
 .right_gutter {
     background: #000000;
-    /* padding: 60px 0px 0px 0px;  */
-    overflow: inherit;
+    padding: 60px 0px 0px 0px; 
 	grid-area: right_gutter;
 }
 
