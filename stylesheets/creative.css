@@ -2,7 +2,7 @@
 body {
     display: grid;
     grid-template-columns: 200px 4fr 1fr;
-    grid-template-rows: 200px 4fr 30px;
+    grid-template-rows: 150px 4fr 30px;
     grid-template-areas:"header header header"
                         "left_gutter main right_gutter"
                         "footer footer footer";
@@ -51,7 +51,6 @@ h1.firstname {
     font-size: 6em; 
     letter-spacing: -.11em;
     margin: 0px 20px 0px 10px;
-    /* border: 1px transparent; */
     }
     
 h1.lastname{
@@ -63,13 +62,21 @@ h1.lastname{
     line-height: 5%;
     margin: 0px 20px 0px 40px;
     border: none;
-    box-shadow: 20px 10px 0px 0px rgb(255, 225, 225), 27px 15px 0px 0px rgb(255, 202, 202), 34px 20px 0px 0px rgb(255, 161, 161), 41px 25px 0px 0px  rgb(255, 95, 95), 48px 30px 0px 0px rgb(237, 40, 40); 
-    -webkit-box-shadow: 20px 10px 0px 0px rgb(255, 225, 225), 27px 15px 0px 0px rgb(255, 202, 202), 34px 20px 0px 0px rgb(255, 161, 161), 41px 25px 0px 0px  rgb(255, 95, 95), 48px 30px 0px 0px rgb(237, 40, 40); 
+    /* box-shadow: 20px 10px 0px 0px rgb(255, 225, 225), 27px 15px 0px 0px rgb(255, 202, 202), 34px 20px 0px 0px rgb(255, 161, 161), 41px 25px 0px 0px  rgb(255, 95, 95), 48px 30px 0px 0px rgb(237, 40, 40); 
+    -webkit-box-shadow: 20px 10px 0px 0px rgb(255, 225, 225), 27px 15px 0px 0px rgb(255, 202, 202), 34px 20px 0px 0px rgb(255, 161, 161), 41px 25px 0px 0px  rgb(255, 95, 95), 48px 30px 0px 0px rgb(237, 40, 40);  */
     }
 
 .namebox {
+    float: left;
+    /* box-shadow: 20px 10px 0px 0px rgb(255, 225, 225), 27px 15px 0px 0px rgb(255, 202, 202), 34px 20px 0px 0px rgb(255, 161, 161), 41px 25px 0px 0px  rgb(255, 95, 95), 48px 30px 0px 0px rgb(237, 40, 40); 
+    -webkit-box-shadow: 20px 10px 0px 0px rgb(255, 225, 225), 27px 15px 0px 0px rgb(255, 202, 202), 34px 20px 0px 0px rgb(255, 161, 161), 41px 25px 0px 0px  rgb(255, 95, 95), 48px 30px 0px 0px rgb(237, 40, 40);  */
+    -webkit-box-shadow: 0px 0px 0px 8px #000000, 0px 0px 0px 16px #4B4C4B, 0px 0px 0px 24px #828482, 0px 0px 0px 31px #B2B5B2, 0px 0px 0px 39px #DADDDA, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: 0px 0px 0px 8px #000000, 0px 0px 0px 16px #4B4C4B, 0px 0px 0px 24px #828482, 0px 0px 0px 31px #B2B5B2, 0px 0px 0px 39px #DADDDA, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.linksection {
     border:none;
-    left: 60px;
+    float: right;
     /* -webkit-box-shadow: 20px 10px 0px 0px rgb(255, 225, 225), 27px 15px 0px 0px rgb(255, 202, 202), 34px 20px 0px 0px rgb(255, 161, 161), 41px 25px 0px 0px  rgb(255, 95, 95), 48px 30px 0px 0px rgb(237, 40, 40); 
     box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 5px 5px 15px 5px rgba(0,0,0); */
 }
@@ -100,19 +107,6 @@ h3.section{
     margin: 0% 10% 0% 10%;
     }
 
-/* This is close but does not follow the content on scroll. Setting to fixed does not work either and it spans through left gutter if you do that*/
-
-/* .main_text:after {
-    content:'';
-    top: 0;
-    left: 0;
-    height: 20px;
-    width: 100%;
-    right: 0;
-    background: linear-gradient(to bottom, rgb(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
-    position: absolute;
-} */
-
 h1.links{
     color: #BDC1BF;
     font-family: 'Raleway', sans-serif;
@@ -121,6 +115,16 @@ h1.links{
     letter-spacing: -.11em;
     text-align: right;
     margin: 0px 20px 0px 0px;
+    }
+
+h1.title{
+    color: #BDC1BF;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 2em; 
+    letter-spacing: -.11em;
+    text-align: left;
+    margin: 0px 0px 0px 0px;
     }
     
 .footer_text {
@@ -148,6 +152,7 @@ h1.links{
 .left_gutter {
     background: #000000;
     overflow: auto; 
+    padding: 30px 0px 0px 0px; 
 	grid-area: left_gutter;
 }
 
@@ -161,25 +166,26 @@ h1.links{
 .main .fadetop{
     position: sticky;
     top: 0; 
-    left: 0;
+    /* left: 0; */
     width: 100%; 
     margin: 0; 
-    padding: 30px 0px 0px 0px; 
-    background-image: linear-gradient(to top, transparent, black);
+    padding: 0px 0px 30px 0px; 
+    background-image: linear-gradient(to top, transparent, #000000);
 }
 
 .main .fadebottom{
     position: sticky;
     bottom: 0; 
-    left: 0;
+    /* left: 0; */
     width: 100%; 
     margin: 0; 
-    padding: 30px 0; 
-    background-image: linear-gradient(to bottom, transparent, black);
+    padding: 50px 0px 0px 0px; 
+    background-image: linear-gradient(to bottom, transparent, #000000);
 }
 
 .right_gutter {
-	background: #000000;
+    background: #000000;
+    padding: 30px 0px 0px 0px; 
 	grid-area: right_gutter;
 }
 
