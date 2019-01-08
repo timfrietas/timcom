@@ -73,7 +73,8 @@ h2.section{
     }
 h3.section{
     color: #BDC1BF;
-    font-family: 'IBM Plex Mono', monospace;
+    /* font-family: 'IBM Plex Mono', monospace; */
+    font-family: 'Cabin', sans-serif;
     font-size: 1em; 
     margin: 0px 0px 20px 20px;
     }
@@ -81,7 +82,8 @@ h3.section{
 .main_text{
     color: #BDC1BF;
     /* background-color: #29030349; */
-    font-family: 'IBM Plex Mono', monospace;
+    /* font-family: 'IBM Plex Mono', monospace; */
+    font-family: 'Cabin', sans-serif;
     font-size: 1.6em; 
     text-align: left;
     position: relative;
@@ -92,7 +94,7 @@ h1.links{
     color: #BDC1BF;
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
-    font-size: 4em; 
+    font-size: 3em; 
     letter-spacing: -.11em;
     text-align: right;
     position: relative;
@@ -128,7 +130,8 @@ h1.links{
 }
 
 .main{
-	position: relative;
+    position: relative;
+    overflow: auto; 
     background: #2f2f2f;
 	grid-area: main;
 }

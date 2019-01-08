@@ -1,7 +1,7 @@
 /* Grid setup */
 body {
     display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns: 200px 4fr 1fr;
     grid-template-rows: 200px 4fr 30px;
     grid-template-areas:"header header header"
                         "left_gutter main right_gutter"
@@ -9,7 +9,7 @@ body {
     padding: 0px;
     margin: 0px;
     height: 100vh;
-    background: #730000;
+    background: #000000;
     transition: 0.3s all;
 }
 
@@ -50,7 +50,8 @@ h1.firstname {
 	text-transform: uppercase;
     font-size: 6em; 
     letter-spacing: -.11em;
-	margin: 0px 20px 0px 10px;
+    margin: 0px 20px 0px 10px;
+    /* border: 1px transparent; */
     }
     
 h1.lastname{
@@ -61,7 +62,17 @@ h1.lastname{
     letter-spacing: -.11em;
     line-height: 5%;
     margin: 0px 20px 0px 40px;
+    border: none;
+    box-shadow: 20px 10px 0px 0px rgb(255, 225, 225), 27px 15px 0px 0px rgb(255, 202, 202), 34px 20px 0px 0px rgb(255, 161, 161), 41px 25px 0px 0px  rgb(255, 95, 95), 48px 30px 0px 0px rgb(237, 40, 40); 
+    -webkit-box-shadow: 20px 10px 0px 0px rgb(255, 225, 225), 27px 15px 0px 0px rgb(255, 202, 202), 34px 20px 0px 0px rgb(255, 161, 161), 41px 25px 0px 0px  rgb(255, 95, 95), 48px 30px 0px 0px rgb(237, 40, 40); 
     }
+
+.namebox {
+    border:none;
+    left: 60px;
+    /* -webkit-box-shadow: 20px 10px 0px 0px rgb(255, 225, 225), 27px 15px 0px 0px rgb(255, 202, 202), 34px 20px 0px 0px rgb(255, 161, 161), 41px 25px 0px 0px  rgb(255, 95, 95), 48px 30px 0px 0px rgb(237, 40, 40); 
+    box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 5px 5px 15px 5px rgba(0,0,0); */
+}
 
 h2.section{
     color: #BDC1BF;
@@ -73,29 +84,42 @@ h2.section{
     }
 h3.section{
     color: #BDC1BF;
-    font-family: 'IBM Plex Mono', monospace;
+    /* font-family: 'IBM Plex Mono', monospace; */
+    font-family: 'Cabin', sans-serif;
     font-size: 1em; 
     margin: 0px 0px 20px 20px;
     }
 
 .main_text{
     color: #BDC1BF;
-    /* background-color: #29030349; */
-    font-family: 'IBM Plex Mono', monospace;
+    /* font-family: 'IBM Plex Mono', monospace; */
+    font-family: 'Cabin', sans-serif;
     font-size: 1.6em; 
     text-align: left;
     position: relative;
     margin: 0% 10% 0% 10%;
     }
 
+/* This is close but does not follow the content on scroll. Setting to fixed does not work either and it spans through left gutter if you do that*/
+
+/* .main_text:after {
+    content:'';
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 100%;
+    right: 0;
+    background: linear-gradient(to bottom, rgb(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    position: absolute;
+} */
+
 h1.links{
     color: #BDC1BF;
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
-    font-size: 4em; 
+    font-size: 3em; 
     letter-spacing: -.11em;
     text-align: right;
-    position: relative;
     margin: 0px 20px 0px 0px;
     }
     
@@ -113,28 +137,48 @@ h1.links{
 /* Grid elements */
 
 .header {
-	position: -webkit-sticky;
   	position: sticky;
-  	z-index: 999;
-  	top: 0;
-	background: #000000;
+    z-index: 1;
+    top: 0;
+    background: #000000;
+    /* -webkit-box-shadow: 0px 30px 5px 5px #1b0404b4; */
 	grid-area: header;
 }
 
 .left_gutter {
-	position: relative;
-	background: #000000;
+    background: #000000;
+    overflow: auto; 
 	grid-area: left_gutter;
 }
 
 .main{
-	position: relative;
+    position: relative;
+    overflow: auto; 
     background: #000000;
 	grid-area: main;
 }
 
+.main .fadetop{
+    position: sticky;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    margin: 0; 
+    padding: 30px 0px 0px 0px; 
+    background-image: linear-gradient(to top, transparent, black);
+}
+
+.main .fadebottom{
+    position: sticky;
+    bottom: 0; 
+    left: 0;
+    width: 100%; 
+    margin: 0; 
+    padding: 30px 0; 
+    background-image: linear-gradient(to bottom, transparent, black);
+}
+
 .right_gutter {
-	position: relative;
 	background: #000000;
 	grid-area: right_gutter;
 }
