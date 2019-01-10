@@ -40,7 +40,7 @@ a.underline:hover
 img {
 	width: 100%;
 	height: 100%;
-	float: left;
+	/* float: left; */
 }
 
 
@@ -107,7 +107,7 @@ h1.lastname{
 .linksection {
     position: relative;
     align-content: center;
-    top: 40%;
+    top: 25%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
 }
@@ -287,7 +287,7 @@ h1.title{
 .main{
     position: relative;
     background: #000000;
-    /* margin: 0px 200px 0px 0px; */
+    /* margin: 0fr 1fr 0fr 0fr; */
     scroll-behavior: smooth;
     overflow: auto; 
 	grid-area: main;
