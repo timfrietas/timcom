@@ -101,7 +101,7 @@ h1.lastname{
 }
 
 .namebox {
-    float: left;
+    border: none;
 }
 
 .linksection {
