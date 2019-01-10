@@ -2,10 +2,10 @@
 /* Grid setup */
 body {
     display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns: 1fr 4fr;
     grid-template-rows: 4fr 30px;
-    grid-template-areas:"left_gutter main right_gutter"
-                        "footer footer footer";
+    grid-template-areas:"left_gutter main"
+                        "footer footer";
     padding: 0px;
     margin: 0px;
     height: 100vh;
@@ -43,6 +43,11 @@ img {
 	/* float: left; */
 }
 
+.hero_image {
+    padding: 10px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%) opacity(15%);
+}
 
 img.work_logos {
     width: 20%;
@@ -287,7 +292,7 @@ h1.title{
 .main{
     position: relative;
     background: #000000;
-    /* margin: 0fr 1fr 0fr 0fr; */
+    padding: 0% 20% 0% 0%;
     scroll-behavior: smooth;
     overflow: auto; 
 	grid-area: main;
