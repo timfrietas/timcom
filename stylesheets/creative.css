@@ -10,6 +10,7 @@ body {
     margin: 0px;
     height: 100vh;
     background: #000000;
+    /* scroll-behavior: smooth; */
 }
 
 a {
@@ -41,6 +42,41 @@ img {
 	height: 100%;
 	float: left;
 }
+
+
+img.work_logos {
+    width: 20%;
+    height: auto;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%) opacity(15%);
+}
+
+img.giphy {
+    position:absolute;
+    top: 20%;
+    left: 25%;
+}
+
+img.amazon {
+    position:absolute;
+    top:20%;
+    right:15%;
+}
+
+img.do {
+    position:absolute;
+    bottom:20%;
+    left:10%;
+}
+
+img.stae {
+    position:absolute;
+    width: 25%;
+    height: auto;
+    bottom:25%;
+    right:30%;
+}
+
 /* Text styles */
 
 h1.firstname {
@@ -59,7 +95,7 @@ h1.lastname{
     font-size: 6em; 
     letter-spacing: -.11em;
     line-height: 5%;
-    margin: 0px 20px 0px 40px;
+    margin: 0px 20px 60px 40px;
     /* -webkit-box-shadow: 0px 3px 0px 0px #4B4C4B, 0px 9px 0px 0px #757575, 0px 15px 0px 0px rgb(141, 141, 141), 0px 23px 0px 0px rgb(165, 165, 165), 0px 31px 0px 0px rgb(189, 193, 191);
     box-shadow: 0px 3px 0px 0px #4B4C4B, 0px 9px 0px 0px #757575, 0px 15px 0px 0px rgb(141, 141, 141), 0px 23px 0px 0px rgb(165, 165, 165), 0px 31px 0px 0px rgb(189, 193, 191);     */
 }
@@ -69,14 +105,11 @@ h1.lastname{
 }
 
 .linksection {
-    /* border:none; */
     position: relative;
     align-content: center;
-    top: 50%;
+    top: 40%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    /* -webkit-transform: translateX(50%);
-    transform: translateX(50%); */
 }
 
 h2.section{
@@ -95,14 +128,24 @@ h3.section{
 
 .main_text{
     color: #BDC1BF;
-    font-family: 'Cabin', sans-serif;
-    font-size: 1.6em; 
-    text-align: left;
     position: relative;
-    /* background-color: #000000ad; */
-    margin: 20px 20px;
-    /* text-shadow: 1px 1px 1px #FFE8FB; */
+    /* font-family: 'Cabin', sans-serif; */
+    /* font-family: 'Josefin Slab', serif; */
+    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    font-size: 2em; 
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20% 20%;
     }
+
+.page{
+    position: relative;
+    height: 100vh;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
 
 h1.links{
     color: #BDC1BF;
@@ -133,34 +176,51 @@ h1.title{
     margin: 10px 0px 0px 10px;
     }
 
-/* Parallax */
+/* Parallax setup*/
 
 .parallax-container {
     height: 100vh;
     overflow-x: hidden;
-    overflow-y: scroll;
-    position: absolute;
-    transform-style: preserve-3d;
+    overflow-y: auto;
     -webkit-perspective: 1px;
     perspective: 1px;
-    perspective-origin: 0 0;
+    /* perspective-origin: 0 0; */
     scroll-behavior: smooth;
   }
+
+  .parallax-section {
+    position: relative;
+    height: 100vh;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+
+  .parallax_layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
   .parallax-front {
     z-index: 3;
     position: relative;
-    transform-origin: 0 0;
+    /* transform-origin: 0 0; */
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
   }
+
+  /* To correct size use scale() to compensate for placement on z-axis.  
+  Correct formula is: 1 + (translateZ * -1) / perspective  */
 
   .parallax-middle {
     position: relative;
     z-index: 2;
     /* move the children to a layer in the background, */
     /* then scale them back up to their original size */
-    transform-origin: 0 0;
-    -webkit-transform: translateZ(-12px) scale(13);
+    /* transform-origin: 0 0; */
+    -webkit-transform: translateZ(-1px) scale(2);
     transform: translateZ(-1px) scale(2);
   }
 
@@ -169,10 +229,51 @@ h1.title{
     z-index: 1;
     /* move the children to a layer in the background, */
     /* then scale them back up to their original size */
-    transform-origin: 0 0;
+    /* transform-origin: 0 0; */
     -webkit-transform: translateZ(-2px) scale(3);
     transform: translateZ(-2px) scale(3);
   }
+
+/* Parallax group styles and mgmt*/
+
+#hello{
+    /* top: 50%;
+    transform: translateY(-50%); */
+}
+
+#hello-parallax {
+    z-index: 3;
+}
+
+#hello-parallax .parallax-front {
+    background: rgb(102,204,102);
+}
+
+#work-parallax {
+    z-index: 2;
+}
+
+#work-parallax .parallax-front {
+    background: rgb(12, 92, 12);
+}
+
+#work-parallax .parallax-middle {
+    background: rgb(12, 92, 12);
+}
+
+#contact-parallax {
+    z-index: 1;
+}
+
+#contact-parallax .parallax-front {
+    background: rgb(109, 102, 204);
+}
+
+#contact-parallax .parallax-middle {
+    background: rgb(12, 92, 12);
+}
+
+
 
 /* Grid elements */
 
@@ -187,6 +288,8 @@ h1.title{
     position: relative;
     background: #000000;
     /* margin: 0px 200px 0px 0px; */
+    scroll-behavior: smooth;
+    overflow: auto; 
 	grid-area: main;
 }
 

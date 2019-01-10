@@ -42,6 +42,11 @@ img {
 	height: 100%;
 	float: left;
 }
+
+img.work_logos {
+	width: 150px;
+    height: 150px;
+}
 /* Text styles */
 
 h1.firstname {
