@@ -52,6 +52,9 @@ img {
 img.work_logos {
     width: 20%;
     height: auto;
+}
+
+img.grayscale {
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%) opacity(15%);
 }
@@ -82,7 +85,8 @@ img.stae {
     right:30%;
 }
 
-/*=== FADE IN  ===*/
+/* side nav animation fade in */
+
 @-webkit-keyframes fadeIn {
     from {
       opacity: 0;
