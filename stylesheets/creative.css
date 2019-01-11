@@ -2,16 +2,13 @@
 /* Grid setup */
 body {
     display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: 4fr 30px;
-    grid-template-areas:"left_gutter main"
-                        "footer footer";
     padding: 0px;
     margin: 0px;
-    height: 100vh;
+    /* height: 100vh; */
     background: #000000;
-    /* scroll-behavior: smooth; */
 }
+
+/* Anchor hacks */
 
 a {
     color: inherit;
@@ -34,19 +31,19 @@ a.underline
 a.underline:hover
 {
     background-image: linear-gradient(180deg,transparent 70%, #ce0d0d 0);
-    /* background-color: #ce0d0d; */
 }
+
+/* Img hacks */
 
 img {
 	width: 100%;
-	height: 100%;
-	/* float: left; */
+    height: 100%;
 }
 
-.hero_image {
-    padding: 10px;
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%) opacity(15%);
+img.hero_image {
+    width: 75%;
+    height: auto;
+    padding: 10% 10% 0% 10%;
 }
 
 img.work_logos {
@@ -96,6 +93,12 @@ img.writing {
     height: auto;
     top:15%;
     right:30%;
+}
+
+img.hacks {
+    left: 15%;
+    width: 80%;
+    height: auto;
 }
 
 /* side nav animation fade in */
@@ -181,8 +184,6 @@ h1.lastname{
     letter-spacing: -.11em;
     line-height: 5%;
     margin: 0px 20px 60px 40px;
-    /* -webkit-box-shadow: 0px 3px 0px 0px #4B4C4B, 0px 9px 0px 0px #757575, 0px 15px 0px 0px rgb(141, 141, 141), 0px 23px 0px 0px rgb(165, 165, 165), 0px 31px 0px 0px rgb(189, 193, 191);
-    box-shadow: 0px 3px 0px 0px #4B4C4B, 0px 9px 0px 0px #757575, 0px 15px 0px 0px rgb(141, 141, 141), 0px 23px 0px 0px rgb(165, 165, 165), 0px 31px 0px 0px rgb(189, 193, 191);     */
 }
 
 .namebox {
@@ -191,8 +192,9 @@ h1.lastname{
 
 .linksection {
     position: relative;
+    top:0;
     align-content: center;
-    top: 25%;
+    top: 30%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
 }
@@ -204,25 +206,16 @@ h2.section{
     text-transform: uppercase;
     margin: 0px 0px 0px 20px;
     }
-h3.section{
-    color: #BDC1BF;
-    font-family: 'Cabin', sans-serif;
-    font-size: 1em; 
-    margin: 0px 0px 20px 20px;
-    }
 
 .main_text{
     color: #BDC1BF;
     position: relative;
-    /* font-family: 'Cabin', sans-serif; */
-    /* font-family: 'Josefin Slab', serif; */
-    /* font-family: 'Playfair Display', serif; */
     font-family: 'Raleway', sans-serif;
     font-weight: 100;
     font-size: 2em; 
     top: 50%;
     transform: translateY(-50%);
-    padding: 20% 20%;
+    padding: 15% 15%;
     }
 
 .page{
@@ -241,15 +234,6 @@ h1.links{
     text-align: right;
     margin: 0px 10px 0px 0px;
     }
-
-h1.title{
-    color: #BDC1BF;
-    font-family: 'Vollkorn', serif;
-    font-size: 2em; 
-    letter-spacing: -.05em;
-    text-align: left;
-    margin: 0px 0px 0px 0px;
-    }
     
 .footer_text {
     position: absolute;
@@ -262,18 +246,6 @@ h1.title{
     }
 
 /* Parallax setup*/
-
-/* Completely replaced by .main */
-
-/* .parallax-container {
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-    -webkit-perspective: 1px;
-    perspective: 1px;
-    perspective-origin: 0 0; */
-    /* scroll-behavior: smooth;
-  } */
 
   .parallax-section {
     position: relative;
@@ -315,59 +287,25 @@ h1.title{
     transform: translateZ(-600px) scale(3);
   }
 
-/* Parallax group styles and mgmt*/
-
-#hello{
-    /* top: 50%;
-    transform: translateY(-50%); */
-}
-
-#hello-parallax {
-    z-index: 3;
-}
-
-#hello-parallax .parallax-front {
-    background: rgb(102,204,102);
-}
-
-#work-parallax {
-    z-index: 2;
-}
-
-#work-parallax .parallax-front {
-    background: rgb(12, 92, 12);
-}
-
-#work-parallax .parallax-middle {
-    background: rgb(12, 92, 12);
-}
-
-#contact-parallax {
-    z-index: 1;
-}
-
-#contact-parallax .parallax-front {
-    background: rgb(109, 102, 204);
-}
-
-#contact-parallax .parallax-middle {
-    background: rgb(12, 92, 12);
-}
-
 
 
 /* Grid elements */
 
+.name {
+    background: #000000;
+    padding: 0px 0px 0px 0px; 
+	grid-area: name;
+}
+
 .left_gutter {
     background: #000000;
-    /* overflow: auto;  */
     padding: 0px 0px 0px 0px; 
 	grid-area: left_gutter;
 }
 
 .main{
     background: #000000;
-    padding: 0% 20% 0% 0%;
+    padding: 0% 10% 0% 0%;
     scroll-behavior: smooth;
     overflow-x: hidden;
     overflow-y: auto;
@@ -377,37 +315,11 @@ h1.title{
 	grid-area: main;
 }
 
-.main .fadetop{
-    position: sticky;
-    top: 0; 
-    /* left: 0; */
-    width: 100%; 
-    margin: 0; 
-    padding: 0px 0px 30px 0px; 
-    background-image: linear-gradient(to top, transparent, #000000);
-}
-
-.main .fadebottom{
-    position: sticky;
-    bottom: 0; 
-    /* left: 0; */
-    width: 100%; 
-    margin: 0; 
-    padding: 50px 0px 0px 0px; 
-    background-image: linear-gradient(to bottom, transparent, #000000);
-}
-
-.right_gutter {
-    background: #000000;
-    /* padding: 60px 0px 0px 0px;  */
-    overflow: inherit;
-	grid-area: right_gutter;
-}
-
 .footer {
 	position: -webkit-sticky;
-  	position: sticky;
+    position: sticky;
     bottom: 0;
+    left: 0;
 	background: #2f2f2f;
 	grid-area: footer;
 }
@@ -443,24 +355,24 @@ h1.title{
 }
 
 /* Media queries */
-/* 
-@media only screen and (max-width: 650px) {
-    body {
-    	grid-template-columns: 100%;
-    	grid-template-rows: 40px 3fr 1fr 30px;
-    	grid-template-areas: "header"
-    					"content" 
-    					"left_gutter"
-    					"footer";
-         }
-} */
 
-/* @media only screen and (min-width: 650px) {
+@media only screen and (max-width: 768px) {
     body {
-    	grid-template-columns: 1fr 3fr 1fr;
-    	grid-template-rows: 1fr 30px;
-    	grid-template-areas: "left_gutter content right gutter"
-    					"footer footer footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 4fr 30px;
+     grid-template-areas:"name"
+                        "main"
+                        "footer";
          }
-} */
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr 30px;
+    grid-template-areas:"name main"
+                        "left_gutter main"
+                        "footer footer";
+         }
+}
 
