@@ -55,7 +55,12 @@ img.work_logos {
 }
 
 img.grayscale {
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    -webkit-filter: grayscale(100%) opacity(25%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%) opacity(25%);
+}
+
+img.grayscale2 {
+    -webkit-filter: grayscale(100%) opacity(15%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%) opacity(15%);
 }
 
@@ -82,6 +87,14 @@ img.stae {
     width: 25%;
     height: auto;
     bottom:25%;
+    right:30%;
+}
+
+img.writing {
+    position:absolute;
+    width: 20%;
+    height: auto;
+    top:15%;
     right:30%;
 }
 
