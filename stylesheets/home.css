@@ -93,8 +93,16 @@ img.writing {
 }
 
 img.hacks {
+    position:absolute;
     width: 80%;
     height: auto;
+}
+
+img.chat {
+    position:absolute;
+    bottom: 10%;
+    right:10%;
+    width: 30%;
 }
 
 /* side nav animation fade in */
