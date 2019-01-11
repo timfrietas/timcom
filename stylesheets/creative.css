@@ -250,15 +250,17 @@ h1.title{
 
 /* Parallax setup*/
 
-.parallax-container {
+/* Completely replaced by .main */
+
+/* .parallax-container {
     height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
     -webkit-perspective: 1px;
     perspective: 1px;
-    /* perspective-origin: 0 0; */
-    scroll-behavior: smooth;
-  }
+    perspective-origin: 0 0; */
+    /* scroll-behavior: smooth;
+  } */
 
   .parallax-section {
     position: relative;
@@ -357,11 +359,14 @@ h1.title{
 }
 
 .main{
-    position: relative;
     background: #000000;
     padding: 0% 20% 0% 0%;
     scroll-behavior: smooth;
-    overflow: auto; 
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100vh;
+    -webkit-perspective: 1px;
+    perspective: 1px;
 	grid-area: main;
 }
 
