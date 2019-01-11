@@ -302,7 +302,7 @@ h1.links{
 .main{
     background: #000000;
     padding: 0% 5%;
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
     overflow-x: hidden;
     overflow-y: scroll;
     height: 100vh;
@@ -369,7 +369,7 @@ h1.links{
     .container {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 1fr auto auto 30px; /* Add 30px back in when you figure footer out */
+    grid-template-rows: 1fr .5fr auto 30px; /* Add 30px back in when you figure footer out */
      grid-template-areas:"name"
                         "left_gutter"
                         "main"
