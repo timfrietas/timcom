@@ -305,6 +305,7 @@ h1.links{
     /* scroll-behavior: smooth; */
     overflow-x: hidden;
     overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
     height: 100vh;
     -webkit-perspective: 1px;
     perspective: 1px;
