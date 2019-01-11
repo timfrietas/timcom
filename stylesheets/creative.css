@@ -269,14 +269,6 @@ h1.title{
     transform-style: preserve-3d;
   }
 
-  .parallax_layer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
-
   .parallax-front {
     z-index: 3;
     position: relative;
@@ -294,8 +286,8 @@ h1.title{
     /* move the children to a layer in the background, */
     /* then scale them back up to their original size */
     /* transform-origin: 0 0; */
-    -webkit-transform: translateZ(-1px) scale(2);
-    transform: translateZ(-1px) scale(2);
+    -webkit-transform: translateZ(-300px) scale(2);
+    transform: translateZ(-300px) scale(2);
   }
 
   .parallax-rear {
@@ -304,8 +296,8 @@ h1.title{
     /* move the children to a layer in the background, */
     /* then scale them back up to their original size */
     /* transform-origin: 0 0; */
-    -webkit-transform: translateZ(-2px) scale(3);
-    transform: translateZ(-2px) scale(3);
+    -webkit-transform: translateZ(-600px) scale(3);
+    transform: translateZ(-600px) scale(3);
   }
 
 /* Parallax group styles and mgmt*/
