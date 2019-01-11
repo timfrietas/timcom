@@ -189,6 +189,7 @@ h1.lastname{
 
 .linksection {
     position: relative;
+    margin: 10px 10px 0px 0px;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
 }
@@ -302,7 +303,7 @@ h1.links{
 .main{
     background: #000000;
     padding: 0% 5%;
-    /* scroll-behavior: smooth; */
+    scroll-behavior: smooth;
     overflow-x: hidden;
     overflow-y: scroll;
     /* -webkit-overflow-scrolling: touch; */
@@ -322,20 +323,6 @@ h1.links{
 }
 
 /* Icons */
-
-.sociallink{
-    font-size: 50%;
-    text-align: center;
-    /* font-size: 2em;  */
-}
-
-.socialicon {
-	height: 22px;
-	width: 22px;
-    padding: 0px 10px;
-    vertical-align: middle;
-}
-
 .twitter_icon {
 	height: 28px;
 	width: 28px;
