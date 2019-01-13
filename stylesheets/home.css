@@ -38,6 +38,7 @@ img.social {
 }
 
 img.hero_image {
+    /* position: fixed; */
     width: 75%;
     height: auto;
     padding: 10% 10% 0% 10%;
@@ -88,14 +89,18 @@ img.writing {
     position:absolute;
     width: 20%;
     height: auto;
-    top:15%;
-    right:30%;
+    top:25%;
+    right:60%;
 }
 
 img.hacks {
-    position:absolute;
-    width: 80%;
-    height: auto;
+    /* position:absolute; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: auto;
+    top: 5%;
 }
 
 img.chat {
@@ -214,18 +219,11 @@ h2.section{
     position: relative;
     font-family: 'Raleway', sans-serif;
     font-weight: 100;
-    font-size: 2em; 
+    font-size: 1.5em; 
     top: 50%;
     transform: translateY(-50%);
     padding: 15% 15%;
     }
-
-.page{
-    position: relative;
-    height: 100vh;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-}
 
 h1.links{
     color: #BDC1BF;
@@ -244,8 +242,23 @@ h1.links{
     font-size: .875em; 
     text-decoration: none;
     text-align: left;
-    margin: 10px 0px 0px 10px;
+    margin: 10px 0px 0px 20px;
     }
+
+.watermark {
+    /* position: absolute; */
+    color: #BDC1BF;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: .875em; 
+    text-align: right;
+    }
+
+.page{
+    position: relative;
+    height: 100vh;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
 
 /* Parallax setup*/
 
