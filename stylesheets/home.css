@@ -4,6 +4,7 @@ body {
     margin: 0px;
     background: #000000;
     transform: translateZ(0);
+    -webkit-overflow-scrolling: touch;
 }
 
 /* Anchor hacks */
@@ -391,6 +392,7 @@ h1.links{
 /* Grid setup and Media queries */
 
 @media only screen and (max-width: 768px) {
+    @supports ((perspective: 1px) and (not (-webkit-overflow-scrolling: touch))) 
     .container {
     display: grid;
     grid-template-columns: 100%;
@@ -400,6 +402,7 @@ h1.links{
                         "main"
                         "footer";/* Add "footer" back in when you figure footer out */
          }
+    }
 }
 
 @media only screen and (min-width: 768px) {
