@@ -38,10 +38,11 @@ img.social {
 }
 
 img.hero_image {
-    /* position: fixed; */
-    width: 75%;
+    position: absolute;
+    width: 25%;
     height: auto;
-    padding: 10% 10% 0% 10%;
+    right: 0;
+    padding: 20px;
 }
 
 img.work_logos {
