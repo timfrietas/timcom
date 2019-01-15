@@ -392,7 +392,6 @@ h1.links{
 /* Grid setup and Media queries */
 
 @media only screen and (max-width: 768px) {
-    @supports ((perspective: 1px) and (not (-webkit-overflow-scrolling: touch))) 
     .container {
     display: grid;
     grid-template-columns: 100%;
@@ -403,10 +402,8 @@ h1.links{
                         "footer";/* Add "footer" back in when you figure footer out */
          }
     }
-}
 
 @media only screen and (min-width: 768px) {
-    @supports ((perspective: 1px) and (not (-webkit-overflow-scrolling: touch))) {
     .container {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -417,4 +414,3 @@ h1.links{
                         /* Add "footer footer" back in when you figure footer out */
          }
     }
-}
