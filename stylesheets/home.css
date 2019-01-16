@@ -1,26 +1,18 @@
 
 body {
     background: #000000;
-    /* scroll-behavior: smooth;
-    transform: translateZ(0px); 
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 3fr 40px;
-    grid-template-areas:"header slides"
-                        "sidebar slides"
-                        "footer footer"; */
 }
+
 .container {
   background: #000000;
 }
 
 * {
-    /* box-sizing: border-box; */
     margin: 0;
     padding: 0;
   }
 
-/* Anchor hacks */
+/* Anchors */
 
 a {
     color: inherit;
@@ -45,14 +37,14 @@ a.underline:hover
     background-image: linear-gradient(180deg,transparent 70%, #ce0d0d 0);
 }
 
-/* Img hacks */
+/* Img */
 
 img.social {
-  max-width:100%;
+  /* max-width:100%; */
   max-height:100%;
   float:left;
-  box-sizing: content-box;
-  /* margin: 2px 24px 2px 4px; */
+  /* padding: 5px 5px; */
+  /* box-sizing: content-box; */
 }
 
 img.work_logos {
@@ -84,30 +76,30 @@ img.amazon {
 
 img.do {
     position:absolute;
-    bottom:20%;
-    left:10%;
+    bottom: 20%;
+    left: 10%;
 }
 
 img.stae {
     position:absolute;
     width: 25%;
     height: auto;
-    bottom:25%;
-    right:30%;
+    bottom: 25%;
+    right: 30%;
 }
 
 img.writing {
     position:absolute;
     width: 35%;
     height: auto;
-    top:25%;
-    right:10%;
+    top: 25%;
+    right: 10%;
 }
 
 img.hacks {
     display: flex;
-    justify-content: center; /* align horizontal */
-    align-items: center; /* align vertical */
+    justify-content: center;
+    align-items: center;
     height: 100%;
     width: auto;
 }
@@ -207,6 +199,13 @@ img.chat {
     -moz-animation-delay: 0.8s;
     animation-delay: 0.8s;
 }
+
+
+
+.header {
+  background: transparent;
+  grid-area: header;
+}
     
 
 /* Text styles */
@@ -230,10 +229,14 @@ h1.lastname{
     margin: 0px 20px 60px 40px;
 }
 
-.header {
-    background: transparent;
-    grid-area: header;
-}
+h1.links{
+  color: #BDC1BF;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-size: 3em; 
+  letter-spacing: -.11em;
+  text-align: right;
+  }
 
 .main_text{
     color: #BDC1BF;
@@ -244,24 +247,17 @@ h1.lastname{
     transform: translateZ(60px) scale(.8);
     padding: 20% 20%;
     }
-
-h1.links{
-    color: #BDC1BF;
-    font-family: 'Raleway', sans-serif;
-    text-transform: uppercase;
-    font-size: 3em; 
-    letter-spacing: -.11em;
-    text-align: right;
-    }
     
 .footer_text {
-    position: absolute;
+    /* position: absolute; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     color: #BDC1BF;
     font-family: 'Raleway', sans-serif;
     font-size: .875em; 
     text-decoration: none;
-    text-align: left;
-    margin: 10px 0px 0px 20px;
+    
     }
 
 .watermark {
@@ -305,22 +301,27 @@ h1.links{
 .footer {
     background: #2f2f2f;
     position: fixed;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
     bottom: 0px;
     width: 100vw;
-    height: 30px;
+    height: 40px;
     grid-area: footer;
 }
 
 .footer_icons {
   display: flex;
-  justify-content: flex-end;
+  min-width: 150px;
+  justify-content: space-evenly;
   align-items: center;
 }
 
 /* Icons */
 .twitter_icon {
-	height: 28px;
-	width: 28px;
+	height: 22px;
+  width: 22px;
+  fill: white;
 }
 
 .github_icon {
@@ -340,18 +341,40 @@ h1.links{
 
 /* Grid setup and Media queries */
 
-@media screen and (min-width: 768px) {
+/* Inspect .container, these are being called but footer not displaying properly... */
 
+@media screen and (max-width: 768px) {
+  .container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 150px auto 3fr 30px;
+  grid-template-areas:"header"
+                      "sidebar"
+                      "slides"
+                      "footer";
+    }
+  .header {
+    display: block;
+  }
+  .nav {
+    display: block;
+  }
+  /* .footer {
+    display: block;
+  } */
+}
+
+@media screen and (min-width: 768px) {
   .container {
     scroll-behavior: smooth;
     transform: translateZ(0px);
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 3fr 40px;
+    grid-template-rows: 1fr 3fr 33px;
     grid-template-areas:"header slides"
                         "sidebar slides"
                         "footer footer";
-         }
+    }
 
   .slide__content {
       display: -webkit-flex;
@@ -359,22 +382,6 @@ h1.links{
       align-items: center;
       justify-content: center;
     }
-    /* .slide__image, .slide__text {
-      padding: 3%;
-      -webkit-flex: 1;
-      flex: 1;
-    }  */
-    /* .slide:nth-child(2n) .slide__text {
-      -webkit-order: 1;
-      order: 1;
-    } */
-    /* .nav {
-      display: block;
-    } */
-    
-    /* .header{
-    display: block;
-    } */
 
     /* parallax */
     @supports ((perspective: 1px) and (not (-webkit-overflow-scrolling: touch))) {
@@ -405,7 +412,7 @@ h1.links{
       .slide, .slide__content {
         transform-style: preserve-3d;
       }
-      .slide__text {
+      /* .slide__text {
         transform: translateZ(60px) scale(.8);
         transform-origin: 100% 50%;
       }
@@ -415,39 +422,8 @@ h1.links{
       }
       .slide:nth-child(2n) .slide__text {
         transform-origin: 0% 50%;
-      }
-      /* .slide:nth-child(2n) .slide__bg {
-        transform: translateZ(59px) scale(.85);
-      } */
-      /* .slide:nth-child(2n+1):not(:first-child) .slide__bg {
-        top: -50%;
-      }
-      .slide:nth-child(2n+1):not(:last-child) .slide__bg {
-        bottom: -50%;
-      } */
-      /* .slide:nth-child(2n) {
-        z-index: 1; ensure slides overlay correctly
       } */
     }
   }
 
-  @media screen and (max-width: 768px) {
-  .container {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 200px .5fr 4fr 30px;
-  grid-template-areas:"header"
-                      "sidebar"
-                      "slides"
-                      "footer";
-       }
-    .header {
-      display: block;
-    }
-    .nav {
-      display: block;
-    }
-    .footer {
-      display: block;
-    }
-  }
+ 
