@@ -243,8 +243,6 @@ h1.lastname{
     font-size: 1.5em;
     transform: translateZ(60px) scale(.8);
     padding: 20% 20%;
-    /* transform-origin: 100% 50%; */
-    /* top: 50%; */
     }
 
 h1.links{
@@ -300,15 +298,13 @@ h1.links{
 
   #hacks .slide__bg {
     display: flex;
-    justify-content: center; /* align horizontal */
-    align-items: center; /* align vertical */
+    justify-content: center; 
+    align-items: center; 
   }
 
 .footer {
     background: #2f2f2f;
     position: fixed;
-    /* z-index: 1; */
-    /* display: block; */
     bottom: 0px;
     width: 100vw;
     height: 30px;
@@ -325,25 +321,21 @@ h1.links{
 .twitter_icon {
 	height: 28px;
 	width: 28px;
-	/* padding: 1px 10px 1px 10px; */
 }
 
 .github_icon {
 	height: 22px;
 	width: 22px;
-	/* padding: 4px 10px 4px 10px; */
 }
 
 .telegram_icon {
 	height: 22px;
 	width: 22px;
-	/* padding: 4px 10px 4px 5px; */
 }
 
 .linkedin_icon {
 	height: 22px;
 	width: 22px;
-	/* padding: 4px 20px 4px 10px; */
 }
 
 /* Grid setup and Media queries */
@@ -352,7 +344,7 @@ h1.links{
 
   .container {
     scroll-behavior: smooth;
-    transform: translateZ(0px); /* Fix paint issues in Edge && Safari H/W acceleration */
+    transform: translateZ(0px);
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 1fr 3fr 40px;
@@ -395,7 +387,6 @@ h1.links{
       }
       .slides {
         position: absolute;
-        /* padding: 20% 20%; */
         width: 100%;
         height: 100%;
         overflow-x: hidden;
@@ -434,12 +425,6 @@ h1.links{
       .slide:nth-child(2n+1):not(:last-child) .slide__bg {
         bottom: -50%;
       } */
-      /* .slide:first-child {
-        padding-top: 15%;
-      } */
-      /*.slide:last-child {
-        padding-bottom: 15%;
-      } */
       /* .slide:nth-child(2n) {
         z-index: 1; ensure slides overlay correctly
       } */
@@ -456,4 +441,13 @@ h1.links{
                       "slides"
                       "footer";
        }
+    .header {
+      display: block;
+    }
+    .nav {
+      display: block;
+    }
+    .footer {
+      display: block;
+    }
   }
