@@ -298,24 +298,11 @@ h1.links{
     /* z-index: -1; */
   }
 
-  /* #hello .slide__bg {
-    background-color: #000000;
-  }  
-  #work .slide__bg {
-    background-color: #000000;
-  }
-  #words .slide__bg {
-    background-color: #000000;
-  } */
   #hacks .slide__bg {
     display: flex;
     justify-content: center; /* align horizontal */
     align-items: center; /* align vertical */
   }
-  /* #contact .slide__bg {
-    background-color: #000000;
-  } */
-
 
 .footer {
     background: #2f2f2f;
