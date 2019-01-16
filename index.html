@@ -41,8 +41,8 @@
 </head>
 <body>
     <div class="container">
-        <div class="name">
-        <a href = "https://www.timfrietas.com">
+        <div class="header">
+            <a href = "https://www.timfrietas.com">
                 <div class="namebox">
                     <h1 class="firstname">Tim</h1>
                     <h1 class="lastname">FRIETAS</h1>
@@ -50,98 +50,125 @@
             </a>
         </div>
 
-        <div class="left_gutter">
-            <div class="linksection">
-                <h1 class="links animate fadeIn fadeone"><a class="underline" href="#hello">hello</a></h1>
-                <h1 class="links animate fadeIn fadetwo"><a class="underline" href="#work">work</a></h1>
-                <h1 class="links animate fadeIn fadethree"><a class="underline" href="#words">words</a></h1>
-                <h1 class="links animate fadeIn fadefour"><a class="underline" href="#hacks">hacks</a></h1>
-                <h1 class="links animate fadeIn fadefive"><a class="underline" href="#contact">contact</a></h1>
-            </div>
+        <div class="sidebar">
+        <nav>
+            <ul class="nav">
+                <li>
+                    <h1 class="links animate fadeIn fadeone">
+                        <a class="underline" href="#hello">hello</a>
+                    </h1>
+                </li>
+                <li>
+                    <h1 class="links animate fadeIn fadetwo">
+                        <a class="underline"href="#work">work</a>
+                    </h1>
+                </li>
+                <li>
+                    <h1 class="links animate fadeIn fadethree">
+                        <a class="underline" href="#words">words</a>
+                    </h1>
+                </li>
+                <li>
+                    <h1 class="links animate fadeIn fadefour">
+                        <a class="underline" href="#hacks">hacks</a>
+                    </h1>
+                </li>
+                <li>
+                    <h1 class="links animate fadeIn fadefive">
+                        <a class="underline" href="#contact">contact</a>
+                    </h1>
+                </li>
+            </ul>
+        </nav>
         </div>
 
-        <!-- <div class="main"><p>I've been a product manager for a pretty long time.</p></div> -->
-
-        <div class="main">
-                <!-- <div id="splash">
-                    <a href="#hello"><img class="hero_image" src="assets/home/me.gif"/></a>
-                </div> -->
-                <div id="hello" class="page">
-                    <div class="main_text">
-                        <p>👋 Hey there.</p>
-                        <p>I'm a product manager currently based in New York. 🗽</p>
-                        <p>I help keep the internet <em>weird</em>.</p> 
-                    </div>
-                </div>
-                <div id="group1" class="parallax-section">
-                    <div class="parallax-front">
-                        <div id="work" class="page">
-                            <div class="main_text">
-                                <p>I've been lucky to have worked for some great companies. You can read more about what I've worked on <a class="underline" href="../work/work.html"><strong>here</strong></a>.</p>
-                                <p>I can also <a class="underline" href="https://neon.horse"><strong>help you</strong></a> with user research, brand strategy and building effective teams.</p>
-                            </div>
+        <div class="slides">
+                <div id="hello" class="slide">
+                    <div class="slide__bg"></div>
+                        <div class="slide__content">
+                        <div class="main_text">
+                            <p>👋&nbsp;Hey there.</p>
+                            </br>
+                            <p>I'm a product manager, currently based in New York.&nbsp;🗽</p>
+                            </br>
+                            <p>Here to help keep the internet weird.&nbsp;🙃</p> 
                         </div>
-                    </div>
-                    <div class="parallax-middle">
-                        <div id="work_bg" class="page">
+                            <!-- <div class="slide__image">
+                                <svg viewBox="0 0 400 425" width="400" height="425"><use xlink:href="#polaroid"/></svg>
+                            </div> -->
+                        </div>
+                </div>
+                <div id="work" class="slide">
+                    <div class="slide__bg">
                             <img class="work_logos giphy grayscale2" src="assets/work/giphy.gif"/>
                             <img class="work_logos amazon grayscale2" src="assets/work/amazon.svg"/>
                             <img class="work_logos do grayscale2" src="assets/work/do.svg"/>
                             <img class="work_logos stae grayscale2" src="assets/work/stae_white.svg"/>
-                        </div>
                     </div>
-                </div>
-                <div id="group2" class="parallax-section">
-                    <div class="parallax-front">
-                        <div id="words" class="page">
+                        <div class="slide__content">
                             <div class="main_text">
-                                <p>I <a class="underline" href="writing/writing.html"><strong>write</strong></a> sometimes, mostly about product management, building teams and making things go beep boop.</p>
+                                <p>I've been lucky to have worked for some great companies. You can read more about what I've worked on <a class="underline" href="../work/work.html"><strong>here</strong></a>.</p>
+                                </br>
+                                <p>I can also <a class="underline" href="https://neon.horse"><strong>help you</strong></a> with user research, brand strategy and building effective teams.</p>
                             </div>
+                            <!-- <div class="slide__image">
+                                <svg viewBox="0 0 400 425" width="400" height="425"><use xlink:href="#polaroid"/></svg>
+                            </div> -->
                         </div>
-                    </div>
-                    <div class="parallax-middle">
-                        <div id="write_bg" class="page">
-                                <img class="grayscale writing" src="assets/home/books.gif"/>
-                        </div>
-                    </div>
                 </div>
-                <div id="group3" class="parallax-section">
-                    <div class="parallax-front">
-                        <div id="hacks" class="page">
+                <div id="words" class="slide">
+                    <div class="slide__bg">
+                        <img class="grayscale writing" src="assets/home/books.gif"/>
+                    </div>
+                        <div class="slide__content">
                             <div class="main_text">
-                                <p>I also occasionally try to <a class="underline" href="creative/creative.html"><strong>create things</strong></a> involving design, code, art, music, nails, glue or Legos. </p>
+                                    <p>I <a class="underline" href="writing/writing.html"><strong>write</strong></a> sometimes, mostly about product management.</p>
                             </div>
+                            <!-- <div class="slide__image">
+                                <svg viewBox="0 0 400 425" width="400" height="425"><use xlink:href="#polaroid"/></svg>
+                            </div> -->
                         </div>
-                    </div>
-                    <div class="parallax-middle">
-                        <div id="hacks_bg" class="page">
-                            <img class="grayscale hacks" src="assets/creative/unknown_pleasures.gif"/>
-                        </div>
-                    </div>
                 </div>
-                <div id="group4" class="parallax-section">
-                    <div class="parallax-front">
-                        <div id="contact" class="page">
+                <div id="hacks" class="slide">
+                    <div class="slide__bg">
+                        <img class="grayscale hacks" src="assets/creative/unknown_pleasures.gif"/>
+                    </div>
+                        <div class="slide__content">
+                            <div class="main_text">
+                                <p>I also occasionally try to <a class="underline" href="creative/creative.html"><strong>create things</strong></a>.  Design, code, art, music, solder, glue and Legos.</p>
+                            </div>
+                            <!-- <div class="slide__image">
+                                <svg viewBox="0 0 400 425" width="400" height="425"><use xlink:href="#polaroid"/></svg>
+                            </div> -->
+                        </div>
+                </div>
+                <div id="contact" class="slide">
+                    <div class="slide__bg">
+                        <img class="grayscale chat" src="assets/home/chat.gif"/>
+                    </div>
+                        <div class="slide__content">
                             <div class="main_text">
                                 <p>DMs are always open on <a class="underline" href="https://twitter.com/timfrietas"><strong>Twitter</strong></a> and <a class="underline" href="https://t.me/timfrietas"><strong>Telegram.</strong></a> 🗣 </p>
-                                <p> ☕️ If you're reading this let me buy you a coffee sometime.</p>
-                                <p>Drop me <a class="underline" href="mailto:timfrietas@gmail.com"><strong>a line.</strong></a>  ✉️ </p>
+                                </br>
+                                <p>If you're reading this I'd happily buy you a coffee sometime.&nbsp;☕️</p>
+                                </br>
+                                <p>Or, simply drop me <a class="underline" href="mailto:timfrietas@gmail.com"><strong>a line.</strong></a>&nbsp;✉️ </p>    
                             </div>
-                        </div>
-                    </div>    
-                    <div class="parallax-middle">
-                        <div id="chat_bg" class="page">
-                            <img class="grayscale chat" src="assets/home/chat.gif"/>
-                        </div>
-                    </div>
-                    <div class="watermark">
-                        <p>MADE WITH LOVE IN 2019.</p>
-                    </div>
+                            <!-- <div class="slide__image">
+                                <svg viewBox="0 0 400 425" width="400" height="425"><use xlink:href="#polaroid"/></svg>
+                            </div> -->
+                        </div>  
                 </div>
-            </div>
+        </div>
 
-    <div class="footer">
-            <div class="footer_text"> <a href="mailto:timfrietas@gmail.com"> CONTACT </a> </div>
+        <!-- <div class="watermark">
+                <p>MADE WITH LOVE IN 2019.</p>
+        </div> -->
+        <div class="footer">
+            <div class="footer_text"> 
+                <a href="mailto:timfrietas@gmail.com"> CONTACT </a> 
+            </div>
+            <div class="footer_icons">
             <div class="linkedin_icon">
                 <a href="https://linkedin.com/in/timfrietas">
                 <img class="social" src="assets/icons/linkedin.svg"/>
@@ -163,6 +190,7 @@
                 </a>
             </div>
         </div>
+        </div>
     </div>
-</body>
+    </body>
 </html>
