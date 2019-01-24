@@ -5,7 +5,7 @@ body {
 }
 
 .container {
-  background: #000000;
+  background: transparent;
   height: calc(100% - 1px);
 }
 
@@ -42,11 +42,8 @@ a.underline:hover
 /* Img */
 
 img.social {
-  /* max-width:100%; */
   max-height:100%;
   float:left;
-  /* padding: 5px 5px; */
-  /* box-sizing: content-box; */
 }
 
 img.work_logos {
@@ -55,12 +52,12 @@ img.work_logos {
 }
 
 img.grayscale {
-    -webkit-filter: grayscale(100%) opacity(25%); /* Safari 6.0 - 9.0 */
+    -webkit-filter: grayscale(100%) opacity(25%); 
     filter: grayscale(100%) opacity(25%);
 }
 
 img.grayscale2 {
-    -webkit-filter: grayscale(100%) opacity(15%); /* Safari 6.0 - 9.0 */
+    -webkit-filter: grayscale(100%) opacity(15%);
     filter: grayscale(100%) opacity(15%);
 }
 
@@ -129,9 +126,6 @@ img.chat {
     align-items: flex-end;
     padding-top: 15%;
     right: 5%;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
   }
 
   .nav a {
@@ -246,7 +240,7 @@ h1.links{
     font-weight: 100;
     font-size: 1.5em;
     transform: translateZ(60px) scale(.8);
-    padding: 20% 20%;
+    padding: 15% 5%;
     }
     
 .footer_text {
@@ -277,7 +271,7 @@ h1.links{
 
   .slide {
     position: relative;
-    padding: 8% 0;
+    padding: 20% 20%;
   }
   .slide__content {
     display: -webkit-flex;
@@ -290,7 +284,7 @@ h1.links{
  
   .slide__bg {
     position: absolute;
-    background-color: #000000;
+    background-color: transparent;
     top: 0;
     left: 0;
     right: 0;
@@ -307,7 +301,6 @@ h1.links{
 .footer {
     background: #2f2f2f;
     position: fixed;
-    /* box-sizing: border-box; */
     display: -webkit-flex;
     display: flex;
     justify-content: space-between;
@@ -370,19 +363,12 @@ h1.links{
     scroll-behavior: smooth;
     transform: translateZ(0px);
     display: grid;
-    grid-template-columns: minmax(250px, auto) 1fr;
-    grid-template-rows: minmax(150px, 1fr) 1fr minmax(40px, auto);
+    grid-template-columns: 350px 1fr;
+    grid-template-rows: minmax(150px, auto) 1fr 40px;
     grid-template-areas:"header slides"
                         "sidebar slides"
                         "footer footer";
     }
-
-  /* .slide__content {
-      display: -webkit-flex;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    } */
 
     /* parallax */
     @supports ((perspective: 1px) and (not (-webkit-overflow-scrolling: touch))) {
@@ -390,9 +376,7 @@ h1.links{
         overflow: hidden;
         height: 100vh;
       }
-      /* body {
-        transform: translateZ(0px);
-      } */
+
       .slides {
         position: absolute;
         width: 100%;
