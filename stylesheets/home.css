@@ -386,9 +386,9 @@ h1.links{
         overflow: hidden;
         height:100%;
       }
-      body {
+      /* body {
         transform: translateZ(0px);
-      }
+      } */
       .slides {
         position: absolute;
         width: 100%;
