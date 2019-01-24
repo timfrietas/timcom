@@ -126,6 +126,7 @@ img.chat {
     align-items: flex-end;
     padding-top: 15%;
     right: 5%;
+    list-style-type: none;
   }
 
   .nav a {
@@ -155,7 +156,7 @@ img.chat {
   
   .fadeIn {
     -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
+    animation-font-family: 'Share Tech Mono', monospace;nav: fadeIn;
   }
 
 .animate {
@@ -342,8 +343,6 @@ h1.links{
 
 /* Grid setup and Media queries */
 
-/* Inspect .container, these are being called but footer not displaying properly... */
-
 @media screen and (max-width: 768px) {
   .container {
   display: grid;
@@ -363,7 +362,7 @@ h1.links{
     scroll-behavior: smooth;
     transform: translateZ(0px);
     display: grid;
-    grid-template-columns: 350px 1fr;
+    grid-template-columns: minmax(150px, auto) 1fr;
     grid-template-rows: minmax(150px, auto) 1fr 40px;
     grid-template-areas:"header slides"
                         "sidebar slides"
