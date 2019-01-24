@@ -127,7 +127,6 @@ img.chat {
     justify-content: flex-end;
     align-items: flex-end;
     padding-top: 15%;
-    /* z-index: 100; */
     right: 5%;
     top: 50%;
     -webkit-transform: translateY(-50%);
@@ -135,8 +134,6 @@ img.chat {
   }
 
   .nav a {
-    /* display: inline-block; */
-    /* padding: .5em 1em; */
     color: inherit;
     text-decoration: none;
     background-color: transparent;
@@ -261,7 +258,7 @@ h1.links{
     font-family: 'Raleway', sans-serif;
     font-size: .875em; 
     text-decoration: none;
-    
+    padding-left: 10px;
     }
 
 .watermark {
@@ -308,8 +305,9 @@ h1.links{
 
 .footer {
     background: #2f2f2f;
+    opacity: 1;
     position: fixed;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     display: -webkit-flex;
     display: flex;
     justify-content: space-between;
@@ -357,7 +355,7 @@ h1.links{
   .container {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: minmax(150px, auto) 3fr 30px;
+  grid-template-rows: minmax(150px, auto) 1fr 30px;
   grid-template-areas:"header"
                       "slides"
                       "footer";
@@ -373,7 +371,7 @@ h1.links{
     transform: translateZ(0px);
     display: grid;
     grid-template-columns: minmax(250px, auto) 1fr;
-    grid-template-rows: minmax(150px, 1fr) 1fr minmax(33px, auto);
+    grid-template-rows: minmax(150px, 1fr) 1fr minmax(40px, auto);
     grid-template-areas:"header slides"
                         "sidebar slides"
                         "footer footer";
