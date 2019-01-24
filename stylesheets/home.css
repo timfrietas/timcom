@@ -359,9 +359,6 @@ h1.links{
   .nav {
     display: block;
   }
-  /* .footer {
-    display: block;
-  } */
 }
 
 @media screen and (min-width: 768px) {
@@ -400,8 +397,6 @@ h1.links{
         overflow-y: auto;
         perspective: 300px;
         scroll-behavior: smooth;
-        scroll-snap-destination: 0% 0%;
-        scroll-snap-type: mandatory;
       }
       .slide {
         scroll-snap-coordinate: 0% 0%;
@@ -412,17 +407,6 @@ h1.links{
       .slide, .slide__content {
         transform-style: preserve-3d;
       }
-      /* .slide__text {
-        transform: translateZ(60px) scale(.8);
-        transform-origin: 100% 50%;
-      }
-      .slide:nth-child(2n) .slide__image {
-        transform: translateZ(100px) scale(.67);
-        transform-origin: 100% 50%;
-      }
-      .slide:nth-child(2n) .slide__text {
-        transform-origin: 0% 50%;
-      } */
     }
   }
 
