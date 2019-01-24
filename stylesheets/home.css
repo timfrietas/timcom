@@ -304,8 +304,7 @@ h1.links{
   }
 
 .footer {
-    background: #2f2f2f;
-    opacity: 1;
+    background: rgba(47, 47, 47, 1);
     position: fixed;
     /* box-sizing: border-box; */
     display: -webkit-flex;
