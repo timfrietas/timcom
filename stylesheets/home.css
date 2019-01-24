@@ -314,7 +314,6 @@ h1.links{
     width: 100vw;
     height: 40px;
     grid-area: footer;
-    z-index: 1;
 }
 
 .footer_icons {
@@ -406,7 +405,7 @@ h1.links{
         scroll-snap-coordinate: 0% 0%;
       }
       .slide__content {
-        height: 100%;
+        height: calc(100% - 40px);
       }
       .slide, .slide__content {
         transform-style: preserve-3d;
