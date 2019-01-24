@@ -304,7 +304,7 @@ h1.links{
   }
 
 .footer {
-    background: rgba(47, 47, 47, 1);
+    background: #2f2f2f;
     position: fixed;
     /* box-sizing: border-box; */
     display: -webkit-flex;
@@ -314,6 +314,7 @@ h1.links{
     width: 100vw;
     height: 40px;
     grid-area: footer;
+    z-index: 1;
 }
 
 .footer_icons {
