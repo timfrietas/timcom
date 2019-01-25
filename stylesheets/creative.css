@@ -161,7 +161,6 @@ h3.section{
     max-width: 1200px;
     padding: 10% 12%;
     overflow-y: auto;
-    background: #730000;
     grid-area: main;
 }
 

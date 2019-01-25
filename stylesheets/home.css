@@ -156,7 +156,7 @@ img.chat {
   
   .fadeIn {
     -webkit-animation-name: fadeIn;
-    animation-font-family: 'Share Tech Mono', monospace;nav: fadeIn;
+    animation-name: fadeIn;
   }
 
 .animate {
