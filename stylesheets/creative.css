@@ -99,6 +99,9 @@ h2.title{
     font-size: 2.5em; 
     letter-spacing: -.11em;
     text-align: left;
+    /* background-color: #3d0404;
+    margin: 0px 0px; */
+    /* background-image: linear-gradient(180deg,transparent 70%,#3d0404 0); */
     }
 
 h2.section{
@@ -142,7 +145,7 @@ h3.section{
 .watermark {
     color: #BDC1BF;
     font-family: 'Share Tech Mono', monospace;
-    font-size: .875em; 
+    font-size: .75em; 
     text-align: right;
     }
 
@@ -327,6 +330,9 @@ h3.section{
     html, body {
         overflow: hidden;
         height: 100vh;
+      }
+      .main {
+        scroll-behavior: smooth;
       }
     }
   }
