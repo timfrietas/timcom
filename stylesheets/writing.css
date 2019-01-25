@@ -138,17 +138,10 @@ h3.section{
 
 .main {
     position: relative;
-    height: 80%;
-    /* display: -webkit-flex;
-    display: flex; */
-    /* align-items: center;
-    justify-content: center; */
-    /* align-content: flex-start;
-    justify-content: left; */
+    height: 100%;
     max-width: 1200px;
     padding: 10% 12%;
     overflow-y: auto;
-    background: #2f2f2f;
     grid-area: main;
 }
 
