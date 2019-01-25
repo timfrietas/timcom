@@ -301,8 +301,8 @@ h3.section{
   grid-template-columns: 100%;
   grid-template-rows: minmax(150px, auto) 1fr 30px;
   grid-template-areas:"header"
-                      "sidebar"
                       "main"
+                      "sidebar"
                       "footer";
     }
 }
