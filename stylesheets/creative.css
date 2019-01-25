@@ -329,10 +329,13 @@ h3.section{
                         "sidebar main"
                         "footer footer";
     }
+
+    @supports ((perspective: 1px) and (not (-webkit-overflow-scrolling: touch))) {}
     html, body {
         overflow: hidden;
         height: 100vh;
       }
+    }
   }
 
  
