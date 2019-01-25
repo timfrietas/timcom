@@ -287,11 +287,9 @@ h3.section{
   grid-template-rows: minmax(150px, auto) 1fr 30px;
   grid-template-areas:"header"
                       "main"
+                      "sidebar"
                       "footer";
     }
-  .sidebar {
-    display: none;
-  }
 }
 
 @media screen and (min-width: 768px) {
