@@ -1,6 +1,6 @@
 
 body {
-    background: #2f2f2f;
+    background: #9a9a9a;
     /* background-image: linear-gradient(#2f2f2f, #807373); */
     height: calc(100% - 40px);
 }
@@ -91,7 +91,7 @@ img.fg {
 /* Text styles */
 
 h1.firstname {
-	color: #BDC1BF;
+	color: #FFFFFF;
 	font-family: 'Raleway', sans-serif;
 	text-transform: uppercase;
     font-size: 6em; 
@@ -110,7 +110,7 @@ h1.lastname{
 }
 
 h1.links{
-  color: #BDC1BF;
+  color: #FFFFFF;
   font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
   font-size: 2em; 
@@ -119,7 +119,7 @@ h1.links{
   }
 
 h2.title{
-    color: #BDC1BF;
+    color: #FFFFFF;
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
     font-size: 2em; 
@@ -130,7 +130,7 @@ h2.title{
     }
 
 h2.section{
-    color: #BDC1BF;
+    color: #FFFFFF;
     /* font-family: 'IBM Plex Mono', monospace; */
     font-family: 'Raleway', sans-serif;
     font-size: 1.4em; 
@@ -139,7 +139,7 @@ h2.section{
     }
 
 h3.section{
-    color: #BDC1BF;
+    color: #FFFFFF;
     /* font-family: 'IBM Plex Mono', monospace; */
     font-family: 'Share', cursive;
     font-size: 1em; 
@@ -161,7 +161,7 @@ h3.section{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    color: #BDC1BF;
+    color: #FFFFFF;
     font-family: 'Raleway', sans-serif;
     font-size: .875em; 
     text-decoration: none;
@@ -169,7 +169,7 @@ h3.section{
     }
 
 .watermark {
-    color: #BDC1BF;
+    color: #FFFFFF;
     font-family: 'Share Tech Mono', monospace;
     font-size: .75em; 
     text-align: right;
