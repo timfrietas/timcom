@@ -47,7 +47,7 @@ a.underline
 
 a.underline:hover
 {
-    background-image: linear-gradient(180deg,transparent 70%, #330505 0);
+    background-image: linear-gradient(180deg,transparent 70%, #860f0f 0);
 }
 
 /* Img */
