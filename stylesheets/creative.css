@@ -121,13 +121,22 @@ h3.section{
     }
 
 .main_text{
-    color: #f5cfcf;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 200;
-    font-size: 1.6em; 
-    text-align: left;
-    position: relative;
-    }
+  color: #ffe5e5;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  font-size: 1.2em; 
+  text-align: left;
+  position: relative;
+  }
+
+.subscript{
+  color: #ffe5e5;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  font-size: 1.0em; 
+  text-align: left;
+  position: relative;
+  }
     
 .footer_text {
     /* position: absolute; */

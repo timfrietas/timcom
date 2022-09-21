@@ -61,10 +61,16 @@ img.grayscale2 {
     filter: grayscale(100%) opacity(15%);
 }
 
+img.disneystreaming {
+  position:absolute;
+  width: auto;
+  top: 20%;
+  left: 0%;
+}
 img.giphy {
     position:absolute;
     top: 20%;
-    left: 25%;
+    left: 35%;
 }
 
 img.amazon {
