@@ -57,8 +57,8 @@ img.grayscale {
 }
 
 img.grayscale2 {
-    -webkit-filter: grayscale(100%) opacity(15%);
-    filter: grayscale(100%) opacity(15%);
+    -webkit-filter: grayscale(100%) opacity(35%);
+    filter: grayscale(100%) opacity(35%);
 }
 
 img.disneystreaming {
