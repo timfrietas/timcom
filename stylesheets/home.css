@@ -85,13 +85,23 @@ img.do {
     left: 10%;
 }
 
+img.mongo {
+  position:absolute;
+  width: 25%;
+  height: auto;
+  bottom: 25%;
+  right: 40%;
+}
+
 img.stae {
     position:absolute;
     width: 25%;
     height: auto;
     bottom: 25%;
-    right: 30%;
+    right: 10%;
 }
+
+
 
 img.writing {
     position:absolute;
