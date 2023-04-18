@@ -250,7 +250,7 @@ h1.links{
   text-align: right;
   }
 
-.main_text{
+.main_text {
     color: #BDC1BF;
     position: relative;
     font-family: 'Raleway', sans-serif;
@@ -260,6 +260,17 @@ h1.links{
     padding: 15% 5%;
     }
     
+.arena-liveblog {
+  color: #BDC1BF;
+  position: relative;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  font-size: 1.5em;
+  transform: translateZ(60px) scale(.8);
+  padding: 15% 5%;
+  }
+  
+
 .footer_text {
     display: -webkit-flex;
     display: flex;
